@@ -67,9 +67,7 @@ double Tester::performDirectTest(uint32_t array_size) {
     for (uint32_t i = 0; i < array_size; i += 16)
       arr_var = array[i];
     auto finish = std::chrono::high_resolution_clock::now();
-    time_taken +=
-        std::chrono::duration_cast<std::chrono::microseconds>(finish - start)
-            .count();
+    time_taken += std::chrono::duration_cast<std::chrono::microseconds>(finish - start).count();
   }
 
   //Free the array
