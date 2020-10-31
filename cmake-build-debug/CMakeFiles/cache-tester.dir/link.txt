@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcache-testerd.a  CMakeFiles/cache-tester.dir/sources/tester.cpp.o
+/usr/bin/ranlib libcache-testerd.a

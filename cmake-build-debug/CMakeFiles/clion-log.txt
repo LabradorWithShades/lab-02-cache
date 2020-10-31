@@ -1,0 +1,23 @@
+/home/nikolai/storage/ManInst/JetBrains/apps/CLion/ch-0/202.7319.72/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/nikolai/Documents/GitHub/lab-02-cache
+-- The C compiler identification is GNU 10.2.0
+-- The CXX compiler identification is GNU 10.2.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc - works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter] Calculating Config-SHA1
+-- [hunter] HUNTER_ROOT: /home/nikolai/.hunter
+-- [hunter] [ Hunter-ID: 9a3594a | Toolchain-ID: 6a68b05 | Config-ID: 48401e9 ]
+-- [hunter] GTEST_ROOT: /home/nikolai/.hunter/_Base/9a3594a/6a68b05/48401e9/Install (ver.: 1.8.0-hunter-p11)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nikolai/Documents/GitHub/lab-02-cache/cmake-build-debug

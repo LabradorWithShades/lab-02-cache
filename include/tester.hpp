@@ -1,7 +1,7 @@
 // Copyright 2020 LabradorWithShades
 // 70892548+LabradorWithShades@users.noreply.github.com
-#ifndef TESTER_HPP
-#define TESTER_HPP
+#ifndef INCLUDE_TESTER_HPP_
+#define INCLUDE_TESTER_HPP_
 
 #include <cstdint>
 #include <iostream>
@@ -25,4 +25,4 @@ class Tester {
   std::vector<uint32_t> m_array_sizes;
 };
 
-#endif /* TESTER_HPP */
+#endif // INCLUDE_TESTER_HPP_

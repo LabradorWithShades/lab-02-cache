@@ -1,0 +1,5 @@
+/home/nikolai/Documents/GitHub/lab-02-cache/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/nikolai/Documents/GitHub/lab-02-cache/cmake-build-debug/CMakeFiles/cache-tester.dir
+/home/nikolai/Documents/GitHub/lab-02-cache/cmake-build-debug/CMakeFiles/test.dir
+/home/nikolai/Documents/GitHub/lab-02-cache/cmake-build-debug/CMakeFiles/tests.dir
+/home/nikolai/Documents/GitHub/lab-02-cache/cmake-build-debug/CMakeFiles/edit_cache.dir
