@@ -1,1 +1,0 @@
-/usr/bin/c++   -pedantic -Werror -Wall -Wextra -Wno-unused-command-line-argument -Wshadow -Wnon-virtual-dtor -g   CMakeFiles/tests.dir/tests/test.cpp.o  -o tests  /home/nikolai/.hunter/_Base/9a3594a/6a68b05/48401e9/Install/lib/libgtest_maind.a libcache-testerd.a /home/nikolai/.hunter/_Base/9a3594a/6a68b05/48401e9/Install/lib/libgtestd.a -pthread 
