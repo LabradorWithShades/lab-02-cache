@@ -86,14 +86,14 @@ double Tester::performReverseTest(uint32_t array_size) {
 
   //Cache warmup
   for (uint32_t i = 0; i < array_size; i += 16)
-    arr_var = array[array_size - i];
+    arr_var = array[array_size - i - 1];
 
   //Test
   int64_t time_taken = 0;
   for (int j = 0; j < 1000; ++j) {
     auto start = std::chrono::high_resolution_clock::now();
     for (uint32_t i = 0; i < array_size; i += 16)
-      arr_var = array[array_size - i];
+      arr_var = array[array_size - i - 1];
     auto finish = std::chrono::high_resolution_clock::now();
     time_taken +=
         std::chrono::duration_cast<std::chrono::microseconds>(finish - start)
