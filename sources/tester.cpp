@@ -61,8 +61,9 @@ double Tester::performDirectTest(uint32_t array_size) {
     arr_var = array[i];
 
   //Test
+  const int test_count = 1000;
   int64_t time_taken = 0;
-  for (int j = 0; j < 1000; ++j) {
+  for (int j = 0; j < test_count; ++j) {
     auto start = std::chrono::high_resolution_clock::now();
     for (uint32_t i = 0; i < array_size; i += 16)
       arr_var = array[i];
@@ -90,7 +91,8 @@ double Tester::performReverseTest(uint32_t array_size) {
 
   //Test
   int64_t time_taken = 0;
-  for (int j = 0; j < 1000; ++j) {
+  const int test_count = 1000;
+  for (int j = 0; j < test_count; ++j) {
     auto start = std::chrono::high_resolution_clock::now();
     for (uint32_t i = 0; i < array_size; i += 16)
       arr_var = array[array_size - i - 1];
@@ -118,7 +120,8 @@ double Tester::performRandomTest(uint32_t array_size) {
 
   //Test
   int64_t time_taken = 0;
-  for (int j = 0; j < 1000; ++j) {
+  const int test_count = 1000;
+  for (int j = 0; j < test_count; ++j) {
     auto start = std::chrono::high_resolution_clock::now();
     for (uint32_t i = 0; i < array_size / 16; ++i)
       arr_var = array[getRandom(0, array_size - 1)];
