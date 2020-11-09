@@ -8,7 +8,7 @@ Tester::Tester(const std::vector<uint32_t>& array_sizes)
   : m_array_sizes(array_sizes) {
 }
 
-void Tester::performTests(std::ostream& out) {
+void Tester::performTests(std::ostream& out) const {
   //Direct
   out << "investigation:" << std::endl << "travel_variant: direct" <<\
          std::endl << "experiments:" << std::endl;
@@ -49,7 +49,7 @@ void Tester::performTests(std::ostream& out) {
   }
 }
 
-double Tester::performDirectTest(uint32_t array_size) {
+double Tester::performDirectTest(uint32_t array_size) const {
   uint32_t* array = genRandomArray(array_size);
   uint32_t arr_var = 0;
 
@@ -78,7 +78,7 @@ double Tester::performDirectTest(uint32_t array_size) {
   return (static_cast<double>(time_taken) / 1000.0);
 }
 
-double Tester::performReverseTest(uint32_t array_size) {
+double Tester::performReverseTest(uint32_t array_size) const {
   uint32_t* array = genRandomArray(array_size);
   uint32_t arr_var = 0;
 
@@ -107,7 +107,7 @@ double Tester::performReverseTest(uint32_t array_size) {
   return static_cast<double>(time_taken) / 1000.0;
 }
 
-double Tester::performRandomTest(uint32_t array_size) {
+double Tester::performRandomTest(uint32_t array_size) const {
   uint32_t* array = genRandomArray(array_size);
   uint32_t arr_var = 0;
 
@@ -136,17 +136,17 @@ double Tester::performRandomTest(uint32_t array_size) {
   return static_cast<double>(time_taken) / 1000.0;
 }
 
-uint32_t* Tester::genRandomArray(uint32_t size) {
+uint32_t* Tester::genRandomArray(uint32_t size) const {
   uint32_t* array = new uint32_t[size];
   for (uint32_t i = 0; i < size; ++i)
     array[i] = random();
   return array;
 }
 
-void Tester::freeArray(uint32_t* array) {
+void Tester::freeArray(uint32_t* array) const {
   delete[] array;
 }
 
-uint32_t Tester::getRandom(uint32_t lower, uint32_t upper) {
+uint32_t Tester::getRandom(uint32_t lower, uint32_t upper) const {
   return lower + random() % (upper - lower + 1);
 }

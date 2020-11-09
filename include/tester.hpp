@@ -11,16 +11,16 @@ class Tester {
  public:
   explicit Tester(const std::vector<uint32_t>& array_sizes);
 
-  void performTests(std::ostream& out = std::cout);
+  void performTests(std::ostream& out = std::cout) const;
  private:
-  double performDirectTest(uint32_t array_size);
-  double performReverseTest(uint32_t array_size);
-  double performRandomTest(uint32_t array_size);
+  double performDirectTest(uint32_t array_size) const;
+  double performReverseTest(uint32_t array_size) const;
+  double performRandomTest(uint32_t array_size) const;
 
-  uint32_t getRandom(uint32_t lower, uint32_t upper);
+  uint32_t getRandom(uint32_t lower, uint32_t upper) const;
 
-  uint32_t* genRandomArray(uint32_t size);
-  void freeArray(uint32_t* array);
+  uint32_t* genRandomArray(uint32_t size) const;
+  void freeArray(uint32_t* array) const;
  private:
   std::vector<uint32_t> m_array_sizes;
 };
